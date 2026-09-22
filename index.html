@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="English Proverb — discover, learn, save and share 1000+ English proverbs with meanings and examples.">
+<title>English Proverb — Learn Wisdom, One Proverb at a Time</title>
+<style>
+:root{
+  --teal:#12877f; --teal-dark:#0b665f; --teal-soft:#e8f7f5;
+  --ink:#132322; --muted:#667674; --bg:#f7faf9; --card:#fff;
+  --border:#e3ecea; --shadow:0 20px 60px rgba(18,70,66,.12);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:20px}
+.brand img{width:42px;height:42px;border-radius:11px}
+.navlinks{display:flex;gap:28px;color:#51625f;font-size:14px}
+.navlinks a:hover{color:var(--teal)}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:12px;padding:13px 20px;font-weight:700;border:1px solid transparent;transition:.2s}
+.btn-primary{background:var(--teal);color:#fff;box-shadow:0 10px 24px rgba(18,135,127,.25)}
+.btn-primary:hover{background:var(--teal-dark);transform:translateY(-1px)}
+.btn-outline{border-color:var(--border);background:#fff}
+.hero{padding:70px 0 90px;background:linear-gradient(135deg,#f7faf9 0%,#eaf8f6 100%);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:70px}
+.eyebrow{display:inline-block;background:#d9f2ef;color:var(--teal-dark);font-size:13px;font-weight:800;padding:7px 12px;border-radius:999px;margin-bottom:18px}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-3px;margin:0 0 22px}
+.hero p{font-size:19px;color:var(--muted);max-width:610px;margin:0 0 30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.phone-wrap{position:relative;display:flex;justify-content:center}
+.phone{width:280px;padding:9px;border-radius:36px;background:#111;box-shadow:0 30px 70px rgba(0,0,0,.22);transform:rotate(3deg)}
+.phone img{display:block;width:100%;border-radius:29px}
+.float-card{position:absolute;bottom:28px;left:0;background:#fff;padding:15px 18px;border-radius:16px;box-shadow:var(--shadow);font-size:14px}
+.float-card strong{display:block;font-size:18px;color:var(--teal)}
+section{padding:90px 0}
+.section-head{text-align:center;max-width:680px;margin:0 auto 45px}
+.section-head h2{font-size:38px;letter-spacing:-1.2px;margin:0 0 10px}
+.section-head p{color:var(--muted);margin:0}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feature{background:var(--card);border:1px solid var(--border);padding:28px;border-radius:20px;box-shadow:0 8px 30px rgba(15,55,52,.05)}
+.icon{width:46px;height:46px;border-radius:14px;background:var(--teal-soft);display:grid;place-items:center;color:var(--teal);font-weight:900;font-size:20px;margin-bottom:17px}
+.feature h3{margin:0 0 8px;font-size:19px}.feature p{margin:0;color:var(--muted);font-size:15px}
+.showcase{background:#102321;color:#fff}
+.showcase .section-head p{color:#a9c0bd}
+.screens{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:end}
+.screen{border-radius:24px;overflow:hidden;background:#171c1c;border:6px solid #202b2a;box-shadow:0 25px 60px rgba(0,0,0,.28)}
+.screen img{width:100%;display:block}
+.screen:nth-child(2){transform:translateY(-25px)}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.checks{display:grid;gap:15px;margin-top:25px}
+.check{display:flex;gap:12px;align-items:flex-start}
+.check b{display:block}.check span{color:var(--muted);font-size:14px}
+.quote{background:linear-gradient(135deg,var(--teal),#0b6e68);color:#fff;border-radius:28px;padding:45px;box-shadow:var(--shadow)}
+.quote blockquote{font-family:Georgia,serif;font-size:28px;line-height:1.35;margin:0 0 18px}
+.quote small{opacity:.85}
+.cta{padding:90px 0}
+.cta-box{text-align:center;background:var(--teal-soft);border:1px solid #cde8e4;border-radius:30px;padding:65px 25px}
+.cta h2{font-size:40px;letter-spacing:-1px;margin:0 0 10px}.cta p{color:var(--muted);margin:0 auto 25px}
+footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);font-size:13px}
+.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:850px){
+ .navlinks{display:none}.hero{padding-top:45px}.hero-grid,.why{grid-template-columns:1fr;gap:45px}
+ .features{grid-template-columns:1fr 1fr}.screens{grid-template-columns:1fr 1fr}.screen:nth-child(2){transform:none}
+}
+@media(max-width:560px){
+ h1{letter-spacing:-2px}.features,.screens{grid-template-columns:1fr}
+ section{padding:65px 0}.hero-grid{gap:35px}.phone{width:245px}.float-card{left:4%}
+ .section-head h2,.cta h2{font-size:31px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#"><img src="https://play-lh.googleusercontent.com/YVvzjdF9ddriZsEGYRQi1DZur-zqSvR7A-dFBYxU0YJ9Xtx_JQK4qM412kNfYPEueEINEIdFylJnQn8ol1W9XA=w240-h480" alt="English Proverb icon"><span>English Proverb</span></a>
+      <div class="navlinks">
+        <a href="#features">Features</a><a href="#screens">Screenshots</a><a href="#about">About</a>
+      </div>
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.app.englishproverb" target="_blank">Get the App</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="container hero-grid">
+  <div>
+   <span class="eyebrow">1000+ English Proverbs</span>
+   <h1>Wisdom worth<br><span style="color:var(--teal)">remembering.</span></h1>
+   <p>Discover meaningful English proverbs with clear explanations and real-world examples. Search, save your favorites, and learn a little wisdom every day.</p>
+   <div class="actions">
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.app.englishproverb" target="_blank">Download on Google Play</a>
+    <a class="btn btn-outline" href="#features">Explore features</a>
+   </div>
+  </div>
+  <div class="phone-wrap">
+   <div class="phone"><img src="https://play-lh.googleusercontent.com/86mi6ZZQOgi-0PuHCD0OkiAQRQmnwDhdd17_w9KJWoV80F62ybQQdI7gU5oWAnHA-XZJzlKZLPC6S_dYvoKAaxE=w526-h296" alt="English Proverb app preview"></div>
+   <div class="float-card"><strong>1000+</strong>proverbs to explore</div>
+  </div>
+ </div>
+</section>
+
+<section id="features">
+ <div class="container">
+  <div class="section-head"><h2>Everything you need to learn</h2><p>A simple, focused experience for discovering English wisdom and building your vocabulary.</p></div>
+  <div class="features">
+   <article class="feature"><div class="icon">A–Z</div><h3>Browse by Letter</h3><p>Explore proverbs alphabetically with counts, or search across the entire collection instantly.</p></article>
+   <article class="feature"><div class="icon">★</div><h3>Favorites</h3><p>Save the proverbs you love and keep a personal collection for quick review.</p></article>
+   <article class="feature"><div class="icon">⌁</div><h3>Daily Proverb</h3><p>Receive a new proverb every day and build a simple learning habit.</p></article>
+   <article class="feature"><div class="icon">↗</div><h3>Easy Sharing</h3><p>Share a proverb with friends and family through your device's native share options.</p></article>
+   <article class="feature"><div class="icon">◐</div><h3>Light & Dark Mode</h3><p>Choose a comfortable theme that adapts to your preference and reading environment.</p></article>
+   <article class="feature"><div class="icon">∞</div><h3>Works Offline</h3><p>The proverb collection is bundled with the app, so you can learn without an internet connection.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="showcase" id="screens">
+ <div class="container">
+  <div class="section-head"><h2>Designed for simple learning</h2><p>Browse, save and customize your experience without unnecessary complexity.</p></div>
+  <div class="screens">
+   <div class="screen"><img src="https://play-lh.googleusercontent.com/86mi6ZZQOgi-0PuHCD0OkiAQRQmnwDhdd17_w9KJWoV80F62ybQQdI7gU5oWAnHA-XZJzlKZLPC6S_dYvoKAaxE=w526-h296" alt="Home screen"></div>
+   <div class="screen"><img src="https://play-lh.googleusercontent.com/Biv_WmtNxWZbN-Wu6690kJ-nFE6HqPM3cqqPYM397Qm_EuIHEUDQNEiG6kheKJg8PD74JW-29h7KgMIkXxgPECA=w526-h296" alt="Favorites screen"></div>
+   <div class="screen"><img src="https://play-lh.googleusercontent.com/phzD9Ucu5DwlrNYKefMS7Se_TG-i2l8-CCFC6BiGZQMqxvKF83JVXGQv1vg-qJG6-zU1Rs9roOa7IjQtcodkPy4=w526-h296" alt="Settings screen"></div>
+  </div>
+ </div>
+</section>
+
+<section id="about">
+ <div class="container why">
+  <div>
+   <div class="section-head" style="text-align:left;margin:0"><h2>Made for curious minds.</h2><p>Whether you're learning English, looking for inspiration, or simply enjoy timeless sayings, English Proverb keeps wisdom close at hand.</p></div>
+   <div class="checks">
+    <div class="check"><b>✓</b><div><b>Students & language learners</b><span>Understand common expressions and enrich your vocabulary.</span></div></div>
+    <div class="check"><b>✓</b><div><b>Writers & creators</b><span>Find a memorable saying when you need a little inspiration.</span></div></div>
+    <div class="check"><b>✓</b><div><b>Daily reflection</b><span>Make one meaningful proverb part of your everyday routine.</span></div></div>
+   </div>
+  </div>
+  <div class="quote"><blockquote>“A proverb is a short sentence based on long experience.”</blockquote><small>— Miguel de Cervantes</small></div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="container">
+  <div class="cta-box">
+   <h2>Start discovering wisdom today.</h2>
+   <p>1000+ English proverbs. Meanings. Examples. Favorites. Offline access.</p>
+   <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.app.englishproverb" target="_blank">Download English Proverb</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container footer-row">
+  <span>© 2026 English Proverb · by Arogya Thapa Magar</span>
+  <span><a href="https://english-proverb.github.io" target="_blank">Privacy Policy</a> · <a href="mailto:pricesnepal@gmail.com">Contact</a></span>
+ </div>
+</footer>
+</body>
+</html>
